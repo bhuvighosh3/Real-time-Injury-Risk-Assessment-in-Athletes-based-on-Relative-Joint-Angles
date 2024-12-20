@@ -1,61 +1,81 @@
-# Real-time-Injury-Risk-Assessment-in-Athletes-based-on-Relative-Joint-Angles
+# Real-Time Injury Risk Assessment in Athletes Based on Relative Joint Angles
 
-This repository contains the implementation, datasets, and analysis for the paper "Real-Time Injury Risk Assessment in Athletes Based on Relative Joint Angles". The project leverages machine learning and computer vision to assess injury risks from athlete movement captured in video footage.
-
-
+This repository contains the implementation, datasets, and analysis for the paper "Real-Time Injury Risk Assessment in Athletes Based on Relative Joint Angles." The project leverages machine learning and computer vision techniques to assess injury risks based on athlete movements captured in video footage. The paper has been published in IEEE Xplore.
 
 ## Paper Link
 
-[https://ieeexplore.ieee.org/document/10497417](https://ieeexplore.ieee.org/document/10497417)
+[IEEE Xplore Paper](https://ieeexplore.ieee.org/document/10497417)  
+DOI: [10.1109/ESCI59607.2024.10497417](https://doi.org/10.1109/ESCI59607.2024.10497417)
+
 ## Authors
 
-- [@bhuvighosh3](https://github.com/bhuvighosh3)
-- [@Atharv56](https://github.com/Atharv56)
-- [@HarshShetye]
-- [@ParthKapadia]
-
+- Bhuvi Ghosh
+- Atharv Salian
+- Harsh Shetye
+- Parth Kapadia
 
 ## Introduction
 
-Explains the motivation for injury risk assessment in athletes.
-Highlights the limitations of traditional methods and the advantages of machine learning.
-Overview of the methodology, focusing on pose estimation and joint angle computation.
-
+This study proposes a real-time injury risk assessment method for athletes based on their relative joint angles. Traditional methods of injury risk assessment, such as manual observation and biomechanical analysis, have limitations in terms of accuracy, scalability, and objectivity. This paper introduces a data-driven approach leveraging pose estimation, joint angle computation, and machine learning classifiers to assess injury risk from video footage.
 
 ## Dataset Preparation
 
-Description of the dataset, including:
-- Videos of athletes in motion from various track events.
-- Pose estimation using MediaPipe for extracting joint coordinates.
-Features:
-- Joint angles (hip, knee, ankle) calculated for left and right limbs.
-Details on preprocessing steps, such as segmenting videos into frames and ensuring diversity in running patterns and injury cases.
+- **Videos**: The dataset consists of videos of athletes in motion during various track events, capturing a variety of movements.
+- **Pose Estimation**: MediaPipe is used for extracting joint coordinates.
+- **Features**: Joint angles (hip, knee, ankle) are calculated for both left and right limbs.
+- **Preprocessing**: Videos are segmented into frames, and efforts are made to ensure diversity in running patterns and injury cases.
+
 ## Methodology
 
-- Single-Frame Analysis: Frame extraction using OpenCV. Pose estimation and joint angle computation. Injury classification using LightGBM.
-- Multi-Frame Analysis: Aggregating joint angle features over multiple frames. Injury classification using SVM.
-- Explanation of bootstrap aggregating for final injury assessment.
+- **Single-Frame Analysis**: Frame extraction is performed using OpenCV. Pose estimation and joint angle computation are followed by injury classification using LightGBM.
+- **Multi-Frame Analysis**: Joint angle features are aggregated over multiple frames, with injury classification performed using Support Vector Machine (SVM).
+- **Bootstrap Aggregating**: An ensemble method is used for final injury assessment, combining predictions from multiple models to improve reliability.
+
 ## Statistical Analysis
 
-- Statistical tests (Kolmogorov-Smirnov) to validate the significance of joint angles as predictive markers
-- Summary of distribution between injured and non-injured states.
+- **Kolmogorov-Smirnov Test**: Used to validate the significance of joint angles as predictive markers.
+- **Distribution Analysis**: Statistical tests are conducted to analyze the distribution of joint angles between injured and non-injured states.
+
 ## Model Performance
 
-- Comparison of single-frame and mult-frame analysis approaches.
-- Performance metrics: accuracy, precision, recall, F1-score.
-- Highlight of the SVM-based multi-frame approach achieving the highest accuracy (73.5%).
+- **Comparison**: The performance of single-frame and multi-frame analysis approaches is compared.
+- **Metrics**: Accuracy, precision, recall, and F1-score are used to evaluate model performance.
+- **Best Approach**: The SVM-based multi-frame approach achieved the highest accuracy of 73.5%.
 
 ## Results
 
-- Key findings demonstrating the feasibility of video-based injury detection.
-- Visualization of hyperparameter tuning for classifiers (e.g., LightGBM and SVM).
-- Evidence of the model's generalizability and consistency across training and test data.
+- The results demonstrate the feasibility of using video-based injury detection in athletes.
+- Hyperparameter tuning for classifiers (e.g., LightGBM and SVM) is visualized to highlight the effectiveness of the chosen models.
+- The model's generalizability and consistency across training and test datasets were confirmed through multiple validation tests.
+
 ## Conclusion
 
-- Summary of contributions, including automated, scalable, and objective injury risk assessment.
-- Emphasis on the potential for real-world application and the role of AI in preventative sports medicine.
+This work demonstrates the potential for using automated, scalable, and objective methods to assess injury risk in athletes. By combining computer vision and machine learning, the approach provides a viable tool for real-time injury risk assessment, with wide applications in sports medicine and injury prevention.
+
 ## Future Scope
 
-- Possible improvements using advanced techniques like vision transformers.
-- Integration of richer datasets and larger-scale validations.
-- Potential applications in other sports and motion analysis fields.
+- **Advanced Techniques**: Integration of more advanced methods such as vision transformers for improved pose estimation.
+- **Dataset Expansion**: Incorporating richer datasets, including different sports and injury types, and larger-scale validations.
+- **Cross-Sport Applications**: The methodology can be extended to various sports and motion analysis fields to assess injury risk.
+
+## Requirements
+
+- Python 3.x
+- MediaPipe
+- OpenCV
+- LightGBM
+- Scikit-learn
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/bhuvighosh3/Real-Time-Injury-Risk-Assessment.git
+cd Real-Time-Injury-Risk-Assessment
+
+# Install dependencies
+pip install -r requirements.txt
