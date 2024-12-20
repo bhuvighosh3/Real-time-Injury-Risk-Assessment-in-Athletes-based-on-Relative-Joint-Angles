@@ -58,18 +58,6 @@ This work demonstrates the potential for using automated, scalable, and objectiv
 - **Dataset Expansion**: Incorporating richer datasets, including different sports and injury types, and larger-scale validations.
 - **Cross-Sport Applications**: The methodology can be extended to various sports and motion analysis fields to assess injury risk.
 
-## Requirements
-
-- Python 3.x
-- MediaPipe
-- OpenCV
-- LightGBM
-- Scikit-learn
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-
 ## Installation
 
 ```bash
