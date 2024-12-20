@@ -4,7 +4,7 @@ This repository contains the implementation, datasets, and analysis for the pape
 
 ## Paper Link
 
-[IEEE Xplore Paper](https://ieeexplore.ieee.org/document/10497417)  
+Paper Link: [IEEE Xplore Paper](https://ieeexplore.ieee.org/document/10497417)  
 DOI: [10.1109/ESCI59607.2024.10497417](https://doi.org/10.1109/ESCI59607.2024.10497417)
 
 ## Authors
