@@ -24,6 +24,11 @@ This study proposes a real-time injury risk assessment method for athletes based
 - **Pose Estimation**: MediaPipe is used for extracting joint coordinates.
 - **Features**: Joint angles (hip, knee, ankle) are calculated for both left and right limbs.
 - **Preprocessing**: Videos are segmented into frames, and efforts are made to ensure diversity in running patterns and injury cases.
+<div style="text-align: center;">
+  <div style="display: inline-block; margin-right: 20px;">
+    <img src="Readme image/image2.png" width="500" />
+  </div>
+</div>
 
 ## Methodology
 
