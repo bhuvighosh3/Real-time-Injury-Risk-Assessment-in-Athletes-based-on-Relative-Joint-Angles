@@ -32,6 +32,8 @@ This study proposes a real-time injury risk assessment method for athletes based
 - **Bootstrap Aggregating**: An ensemble method is used for final injury assessment, combining predictions from multiple models to improve reliability.
 
 ![Alt text]("Readme image/image1.jpg")
+![Alt text](./"Readme image"/image1.jpg)
+
 
 ## Statistical Analysis
 
