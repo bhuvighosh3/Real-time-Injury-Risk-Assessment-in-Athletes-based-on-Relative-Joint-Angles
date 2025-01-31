@@ -52,6 +52,11 @@ This study proposes a real-time injury risk assessment method for athletes based
 - **Comparison**: The performance of single-frame and multi-frame analysis approaches is compared.
 - **Metrics**: Accuracy, precision, recall, and F1-score are used to evaluate model performance.
 - **Best Approach**: The SVM-based multi-frame approach achieved the highest accuracy of 73.5%.
+<div style="text-align: center;">
+  <div style="display: inline-block; margin-right: 20px;">
+    <img src="Readme image/image3.png" width="500" />
+  </div>
+</div>
 
 ## Results
 
