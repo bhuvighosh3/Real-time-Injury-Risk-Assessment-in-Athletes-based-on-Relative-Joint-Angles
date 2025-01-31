@@ -31,10 +31,6 @@ This study proposes a real-time injury risk assessment method for athletes based
 - **Multi-Frame Analysis**: Joint angle features are aggregated over multiple frames, with injury classification performed using Support Vector Machine (SVM).
 - **Bootstrap Aggregating**: An ensemble method is used for final injury assessment, combining predictions from multiple models to improve reliability.
 
-![Alt text]("Readme image/image1.jpg")
-![Alt text](./"Readme image"/image1.jpg)
-
-
 ## Statistical Analysis
 
 - **Kolmogorov-Smirnov Test**: Used to validate the significance of joint angles as predictive markers.
